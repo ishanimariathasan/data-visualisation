@@ -45,3 +45,6 @@ p <- ggplot(df_long, aes(x = sample, y = value, fill = group)) +
   )
 
 print(p)
+# Ensure figures directory exists and save plot
+dir.create("figures", recursive = TRUE, showWarnings = FALSE)
+ggsave(filename = "figures/age_on_male_barplot.png", plot = p, width = 8, height = 6, dpi = 150)

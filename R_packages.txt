@@ -1,0 +1,5 @@
+tidyverse
+readr
+ggplot2
+knitr
+DT
